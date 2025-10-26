@@ -1,17 +1,23 @@
-// Replace these values with your Firebase project config from the console
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.25.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.25.0/firebase-auth.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/9.25.0/firebase-firestore.js";
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAnQVPOGHGnQPdcfrHx3VOLdsEWDnZhSpg",
+    authDomain: "hosted-game.firebaseapp.com",
+    projectId: "hosted-game",
+    storageBucket: "hosted-game.firebasestorage.app",
+    messagingSenderId: "109068112763",
+    appId: "1:109068112763:web:9447fc8eed7ebf4de263de",
+    measurementId: "G-39J7YCKQT1"
+  };
 
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
