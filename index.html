@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Battleships Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>⚓ Battleships Online</h1>
+      <button id="newGameBtn">New Game</button>
+      <button id="inviteBtn">Invite by Email</button>
+    </header>
+
+    <main>
+      <div id="auth"></div>
+      <section id="boards" class="hidden">
+        <div class="grid" id="playerGrid"></div>
+        <div class="grid" id="enemyGrid"></div>
+      </section>
+      <section id="log"></section>
+    </main>
+
+    <footer>
+      Hosted on GitHub Pages | Powered by Firebase
+    </footer>
+  </div>
+
+  <!-- Firebase + App -->
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
